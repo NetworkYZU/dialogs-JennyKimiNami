@@ -5,6 +5,8 @@
  */
 package lendle.courses.wp.dialogsample;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lendle
@@ -27,36 +29,95 @@ public class ShowMessageDialogSample extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        defaultbutton = new javax.swing.JButton();
+        errorbutton = new javax.swing.JButton();
+        informationbutton = new javax.swing.JButton();
+        plainbutton = new javax.swing.JButton();
+        questionbutton = new javax.swing.JButton();
+        warningbutton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridLayout(6, 1));
 
-        jButton1.setText("Default");
-        getContentPane().add(jButton1);
+        defaultbutton.setText("Default");
+        defaultbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                defaultbuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(defaultbutton);
 
-        jButton2.setText("Error");
-        getContentPane().add(jButton2);
+        errorbutton.setText("Error");
+        errorbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                errorbuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(errorbutton);
 
-        jButton3.setText("Information");
-        getContentPane().add(jButton3);
+        informationbutton.setText("Information");
+        informationbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                informationbuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(informationbutton);
 
-        jButton4.setText("Plain");
-        getContentPane().add(jButton4);
+        plainbutton.setText("Plain");
+        plainbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plainbuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(plainbutton);
 
-        jButton5.setText("Question");
-        getContentPane().add(jButton5);
+        questionbutton.setText("Question");
+        questionbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                questionbuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(questionbutton);
 
-        jButton6.setText("Warning");
-        getContentPane().add(jButton6);
+        warningbutton.setText("Warning");
+        warningbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                warningbuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(warningbutton);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void defaultbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_defaultbuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_defaultbuttonActionPerformed
+
+    private void errorbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_errorbuttonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello", "", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_errorbuttonActionPerformed
+
+    private void informationbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_informationbuttonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello", "", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_informationbuttonActionPerformed
+
+    private void plainbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plainbuttonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello", "", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_plainbuttonActionPerformed
+
+    private void questionbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_questionbuttonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello", "", JOptionPane.QUESTION_MESSAGE);
+    }//GEN-LAST:event_questionbuttonActionPerformed
+
+    private void warningbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_warningbuttonActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello", "", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_warningbuttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,11 +155,11 @@ public class ShowMessageDialogSample extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton defaultbutton;
+    private javax.swing.JButton errorbutton;
+    private javax.swing.JButton informationbutton;
+    private javax.swing.JButton plainbutton;
+    private javax.swing.JButton questionbutton;
+    private javax.swing.JButton warningbutton;
     // End of variables declaration//GEN-END:variables
 }
